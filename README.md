@@ -1,6 +1,5 @@
 # ProyectoGit
 ## Informacion
 Creado por: Ariana Lopez Robles
-'''python
-print("Hola")
-'''
+# Resumen Quimica Tema 1, 2, 3 y 4
+## Tema 1
