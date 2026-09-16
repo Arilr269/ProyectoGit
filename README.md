@@ -86,12 +86,15 @@ El desarrollo deberá realizarse progresivamente mediante diferentes commits.
 Como mínimo, el historial deberá contener cambios equivalentes a los siguientes:
 
 **Versión 1 — Proyecto inicial**
+
 Crear la estructura básica del programa, el menú y la opción para agregar tareas.
 -----------------------------------------------------------------------
 **Versión 2 — Mostrar tareas**
+
 Agregar la funcionalidad para mostrar las tareas almacenadas.
 -----------------------------------------------------------------------
 **Versión 3 — Completar tareas**
+
 Agregar la posibilidad de marcar una tarea como completada.
 -----------------------------------------------------------------------
 
