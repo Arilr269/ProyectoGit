@@ -89,13 +89,10 @@ Como mínimo, el historial deberá contener cambios equivalentes a los siguiente
 
 __Versión 1 — Proyecto inicial__
 Crear la estructura básica del programa, el menú y la opción para agregar tareas.
------------------------------------------------------------------------
 __Versión 2 — Mostrar tareas__
 Agregar la funcionalidad para mostrar las tareas almacenadas.
------------------------------------------------------------------------
 __Versión 3 — Completar tareas__
 Agregar la posibilidad de marcar una tarea como completada.
------------------------------------------------------------------------
 
 ## Uso de una rama
 Después de completar las funcionalidades principales del proyecto, deberá desarrollar una mejora adicional
