@@ -1,5 +1,4 @@
 #include <iostream>
-#include <limits>
 #include <vector>
 #include <string>
 
@@ -11,46 +10,37 @@ struct Tarea {
     bool completada;
 };
 
+// Prototipos
 void agregarTarea(vector<Tarea>& tareas);
 void mostrarTareas(const vector<Tarea>& tareas);
-void eliminarTarea(vector<Tarea>& tareas);
 void completarTarea(vector<Tarea>& tareas);
 
 int main() {
     vector<Tarea> tareas;
-    int opcion = 0;
+    int opcion;
 
     while (opcion != 5) {
         cout << "\nLISTA DE TAREAS\n\n";
         cout << "1. Agregar tarea\n";
         cout << "2. Mostrar tareas\n";
-        cout << "3. Eliminar tarea\n";
-        cout << "4. Marcar tarea como completada\n";
-        cout << "5. Salir\n\n";
+        cout << "3. Marcar tarea como completada\n";
+        cout << "4. Salir\n\n";
         cout << "Seleccione una opción: ";
 
-        if (!(cin >> opcion)) {
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "Opción no válida.\n";
-            continue;
-        }
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin >> opcion;
+        cin.ignore();
 
         switch (opcion) {
             case 1:
-                agregarTarea(tareas);
+                // agregarTarea(tareas);
                 break;
             case 2:
                 mostrarTareas(tareas);
                 break;
             case 3:
-                eliminarTarea(tareas);
+                // completarTarea(tareas);
                 break;
             case 4:
-                completarTarea(tareas);
-                break;
-            case 5:
                 cout << "Saliendo del programa...\n";
                 break;
             default:
@@ -63,20 +53,10 @@ int main() {
 }
 
 // Agrega una nueva tarea al vector
-void agregarTarea(vector<Tarea>& tareas) {
-    Tarea nuevaTarea;
-    cout << "Ingrese la tarea: ";
-    getline(cin, nuevaTarea.descripcion);
 
-    if (nuevaTarea.descripcion.empty()) {
-        cout << "La descripción no puede estar vacía.\n";
-        return;
-    }
-
-    nuevaTarea.completada = false;
-    tareas.push_back(nuevaTarea);
-    cout << "Tarea agregada correctamente.\n";
-}
+// void agregarTarea(vector<Tarea>& tareas) {
+// 
+// }
 
 // Muestra todas las tareas
 void mostrarTareas(const vector<Tarea>& tareas) {
@@ -93,55 +73,7 @@ void mostrarTareas(const vector<Tarea>& tareas) {
     }
 }
 
-void eliminarTarea(vector<Tarea>& tareas) {
-    if (tareas.empty()) {
-        cout << "No hay tareas para eliminar.\n";
-        return;
-    }
-
-    mostrarTareas(tareas);
-    int numero;
-    cout << "Ingrese el número de la tarea a eliminar: ";
-    if (!(cin >> numero)) {
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "Número de tarea no válido.\n";
-        return;
-    }
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-    if (numero < 1 || static_cast<size_t>(numero) > tareas.size()) {
-        cout << "Número de tarea no válido.\n";
-        return;
-    }
-
-    tareas.erase(tareas.begin() + numero - 1);
-    cout << "Tarea eliminada correctamente.\n";
-}
-
 // Marca una tarea como completada
-void completarTarea(vector<Tarea>& tareas) {
-    if (tareas.empty()) {
-        cout << "No hay tareas para completar.\n";
-        return;
-    }
-
-    mostrarTareas(tareas);
-    int numero;
-    cout << "Seleccione la tarea: ";
-    if (!(cin >> numero)) {
-        cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "Número de tarea no válido.\n";
-        return;
-    }
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-    if (numero < 1 || static_cast<size_t>(numero) > tareas.size()) {
-        cout << "Número de tarea no válido.\n";
-        return;
-    }
-
-    tareas[numero - 1].completada = true;
-    cout << "Tarea marcada como completada.\n";
-}
+// void completarTarea(vector<Tarea>& tareas) {
+// 
+// }
