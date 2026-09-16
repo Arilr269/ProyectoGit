@@ -1,7 +1,9 @@
-# Proyecto 4
+# PROYECTO 4
 ## Lista de tareas
 Creado por: Ariana Lopez Robles
 
+# Indicaciones
+-----------------------------------------------------------------------
 ## Descripción 
 En este proyecto se desarrollará una aplicación de consola en C++ para administrar una lista de tareas.
 Para este proyecto se utilizará Git y GitHub, o sea, el programa debe ir evolucionando mediante diferentes
