@@ -27,6 +27,8 @@ Seleccione una opción:
 
 ## Funcionalidades
 **1. Agregar tarea**
+
+
 Solicite al usuario una descripción para la nueva tarea y agréguela a la lista.
 Toda tarea va a comenzar con el estado:
 Pendiente
@@ -36,6 +38,8 @@ Ingrese la tarea: Estudiar para el examen
 Tarea agregada correctamente.
 
 **2. Mostrar tareas**
+
+
 Recorra el vector y muestre todas las tareas registradas.
 Cada tarea deberá indicar su estado.
 Por ejemplo:
@@ -46,6 +50,8 @@ TAREAS
 3. [Pendiente] Leer documentación de Git
 
 **3. Marcar tarea como completada**
+
+
 Muestre las tareas disponibles y solicite el número de la tarea que desea marcar como completada.
 Si la tarea existe, cambie su estado:
 Pendiente
@@ -59,6 +65,8 @@ Tarea marcada como completada.
 Si la tarea no existe, deberá mostrarse un mensaje indicando que la opción no es válida.
 
 **4. Salir**
+
+
 Finaliza la ejecución del programa.
 
 ## Estructuras de datos requeridas
