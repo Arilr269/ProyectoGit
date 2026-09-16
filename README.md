@@ -108,6 +108,8 @@ sin modificar directamente la rama principal.
 La funcionalidad será:
 
 **Prioridad de las tareas**
+
+
 Agregue a cada tarea una prioridad:
 Alta
 Media
@@ -120,6 +122,8 @@ Por ejemplo:
 La mejora deberá desarrollarse utilizando una rama independiente.
 
 **1. Crear la rama**
+
+
 Ingrese al repositorio del proyecto en GitHub.
 En la página principal del repositorio, localice el selector de ramas, donde normalmente aparecerá:
 main
@@ -131,10 +135,13 @@ GitHub mostrará una opción similar a:
 
 Create branch: feature/prioridades
 Seleccione esa opción.
+
 **Importante:** todos los cambios relacionados con la nueva funcionalidad deberán realizarse en
 feature/prioridades. 
 
 **2. Trabajar dentro de la rama**
+
+
 Antes de modificar cualquier archivo, compruebe que el selector de ramas muestra:
 feature/prioridades
 Realice los cambios necesarios en el código para agregar la prioridad a cada tarea.
@@ -148,9 +155,14 @@ También deberá modificar las partes necesarias del programa para que la priori
 correctamente.
 
 **3. Guardar los cambios mediante un commit**
+
+
 Una vez completada la funcionalidad, realice un commit.
 
+
 **4. Crear la Pull Request**
+
+
 Una vez que la funcionalidad esté terminada deberá crear una Pull Request para proponer que los cambios
 de la rama se incorporen a main .
 Desde la página principal del repositorio, seleccione:
@@ -168,12 +180,16 @@ compare:
 feature/prioridades
 
 **5. Completar la Pull Request**
+
+
 Asigne un título.
 En la descripción explique brevemente qué se modificó.
 Después seleccione:
 Create pull request
 
 **6. Revisar los cambios**
+
+
 GitHub mostrará los archivos modificados y las diferencias entre:
 main
 
@@ -187,6 +203,8 @@ el programa mantenga las funcionalidades anteriores.
 la nueva funcionalidad esté implementada correctamente.
 
 **7. Integrar la rama**
+
+
 Una vez revisada la Pull Request, seleccione:
 Merge pull request
 y posteriormente confirme:
